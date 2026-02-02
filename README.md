@@ -1,4 +1,5 @@
 # dekofile (DF) 🚀
+> **Current Version: 2.0 (System Mode + Localhost Bridge)**
 
 A minimalist, rootless build automation tool for people who hate bloat. Build anything, anywhere—from Termux to Cloud VMs.
 
@@ -33,3 +34,24 @@ Bash
 Deko F-- push [URL] -- login [PASSWORD] && [USER]
 Safety Warning
 DF executes raw bash commands. If you put sudo rm -rf / in your dekofile and you have root, it’s your problem
+
+=======================================================================================================================================
+  		   FakeADB
+Now,this tool can execute root commands whitout root! You need to add in your deko file:
+
+
+```dockerfile
+IMPORT F_A
+```
+
+The rest of your trash code
+
+im NOT responsable for damages on your device after you write 'sudo rm -rf /' if you make this,how are you reading this? on a potato?
+
+so,is this,if you want to report a bug... wait,i dont have discord
+
+cya! :D
+
+(go write now,stop reading this shit)
+
+=============================================================================================
