@@ -1,0 +1,13 @@
+# Binaries
+bin/
+DF
+*.o
+*.out
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+/my_rootfs/
