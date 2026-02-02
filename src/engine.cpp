@@ -4,6 +4,7 @@
 #include <vector>
 #include <sstream>
 #include <cstdlib>
+bool FAKE_ADB_ENABLED = false;
 #include <algorithm>
 
 using namespace std;
@@ -25,6 +26,7 @@ string trim(const string& s) {
 void process_line(string line) {
     line = trim(line);
     if (line.empty() || line == "EnD") return;
+    if (line.find("IMPORT F_A") == 0) { FAKE_ADB_ENABLED = true; return; }
 
     // 1. IMPORT Logic: Check and install dependencies
     if (line.find("IMPORT") == 0) {
